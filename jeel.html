@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Netflix Clone</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: #000;
+            color: #fff;
+        }
+
+        
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            position: absolute;
+            width: 100%;
+            z-index: 10;
+        }
+
+        header img {
+            width: 150px;
+        }
+
+        header button {
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+       
+        .banner {
+            background-image: url("image copy 34.png");
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            padding-left: 50px;
+            justify-content: center;
+        }
+
+        .banner-content {
+            max-width: 600px;
+        }
+
+        .banner-content h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .banner-content p {
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+        }
+
+        .banner-content button {
+            padding: 12px 25px;
+            font-size: 18px;
+            border: none;
+            margin-right: 10px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        .play {
+            background-color: white;
+            color: black;
+        }
+
+        .info {
+            background-color: rgba(239, 239, 244, 0.998);
+            color: rgb(0, 0, 0);
+        }
+
+       
+        .row {
+            margin-left: 50px;
+            margin-top: 40px;
+        }
+
+        .row h2 {
+            margin-bottom: 10px;
+        }
+
+        .row-posters {
+            display: flex;
+            overflow-x: auto;
+        }
+
+        .row-posters img {
+            width: 200px;
+            margin-right: 10px;
+            transition: transform 0.3s;
+            cursor: pointer;
+            border-radius: 4px;
+            padding: 20px;
+            margin: 10px;
+        }
+
+        .row-posters img:hover {
+            transform: scale(1.1);
+        }
+
+        .row-posters::-webkit-scrollbar {
+            display: none;
+        }
+        .foot-panel1 {
+    background-color: rgba(139, 201, 156, 0.765);
+    color: white;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+}
+
+.foot-panel2 {
+    background-color: rgb(59, 59, 59);
+    color: white;
+    height: 500px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+ul {
+    margin-top: 10px;
+}
+
+ul a {
+    display: block;
+    font-size: 0.85rem;
+    margin-top: 10px;
+    color: #dddddd;
+}
+
+.foot-panel3 {
+    background-color: rgb(59, 59, 59);
+    color: white;
+    border-top: 0.5px solid white;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+}
+
+.logo1 {
+    background-image: url(image\ copy\ 22.png);
+    background-size: cover;
+    height: 50px;
+    width: 150px;
+}
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix">
+    
+    <a href="signin.html"><button>Sign In</button></a>
+
+</header>
+
+<section class="banner">
+    <div class="banner-content">
+        <h1>Unlimited movies, TV shows and more</h1>
+        <p>Watch anywhere. Cancel anytime.</p>
+        <button class="play"> Play</button>
+        <button class="info">More Info</button>
+    </div>
+</section>
+
+<section class="row">
+    <h2>Trending Now</h2>
+    <div class="row-posters">
+        <img src="image copy 23.png">
+        <img src="image copy 24.png">
+        <img src="image copy 25.png">
+        <img src="image copy 26.png">
+        <img src="image copy 27.png">
+    </div>
+</section>
+
+<section class="row">
+    <h2>Netflix Web srise</h2>
+    <div class="row-posters">
+        <img src="image copy 29.png">
+        <img src="image copy 30.png">
+        <img src="image copy 31.png">
+        <img src="image copy 32.png">
+        <img src="image copy 28.png">
+    </div>
+</section>
+<footer>
+    <div class="foot-panel1 border">
+      Back to Top
+    </div>
+    <div class="foot-panel2 border">
+      <ul>
+        <p> Get to Know Us</p>
+        <a>About Netflix</a>
+        <a>Careers</a>
+        <a>Press Releases</a>
+        <a>Netflix Science</a>
+      </ul>
+      <ul>
+        <p> connect with Us</p>
+        <a>Facebook</a>
+        <a>Twitter</a>
+        <a>Instagram</a>
+      </ul>
+      
+      <ul>
+        <p>Let Us Help You</p>
+        <a>Your Account</a>
+        <a>Returns Centre</a>
+        
+        <a>100% Purchase Protection</a>
+        <a>Netflix App Download</a>
+        <a>Help</a>
+      </ul>
+    </div>
+    <div class="foot-panel3 border">
+      <div class="logo1"></div>
+    </div>
+</footer>
+
+</body>
+</html>
