@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hire Me | Jeel Ghoghari</title>
+
+    <link rel="stylesheet" href="hire-me.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+      <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: linear-gradient(#262525, #1c1c1c);
+    color: white;
+    min-height: 100vh;
+}
+
+/* MAIN CONTAINER */
+.hire-container{
+    max-width: 700px;
+    margin: auto;
+    padding: 3rem 1.5rem;
+    text-align: center;
+}
+
+h1{
+    font-size: 2.8rem;
+    color: #5DB9EE;
+}
+
+.subtitle{
+    margin-bottom: 2rem;
+    color: #ccc;
+}
+
+/* INFO BOX */
+.info-box{
+    background-color: #262525;
+    border: 2px solid #5DB9EE;
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: left;
+    margin-bottom: 3rem;
+}
+
+.info-box p{
+    margin-bottom: 0.8rem;
+    font-size: 1.05rem;
+}
+
+/* FORM */
+.hire-form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.hire-form input,
+.hire-form textarea{
+    padding: 0.9rem 1rem;
+    background: transparent;
+    border: 2px solid #5DB9EE;
+    border-radius: 0.6rem;
+    color: white;
+    font-size: 1rem;
+    outline: none;
+}
+
+.hire-form input::placeholder,
+.hire-form textarea::placeholder{
+    color: #ccc;
+}
+
+.hire-form input:focus,
+.hire-form textarea:focus{
+    box-shadow: 0 0 12px rgba(93,185,238,0.7);
+}
+
+/* BUTTON */
+.hire-form button{
+    padding: 0.9rem;
+    font-size: 1.1rem;
+    background-color: #5DB9EE;
+    color: #262525;
+    border: none;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hire-form button:hover{
+    background: transparent;
+    color: #5DB9EE;
+    border: 2px solid #5DB9EE;
+}
+
+/* BACK BUTTON */
+.back-btn{
+    display: inline-block;
+    margin-top: 2rem;
+    text-decoration: none;
+    color: #5DB9EE;
+    font-size: 1rem;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 600px){
+    h1{
+        font-size: 2.2rem;
+    }
+
+    .info-box{
+        padding: 1.5rem;
+    }
+}
+
+      </style>
+</head>
+
+<body>
+
+<div class="hire-container">
+
+    <h1>Hire Me</h1>
+    <p class="subtitle">Let's work together</p>
+
+    <div class="info-box">
+        <p><strong>Name:</strong> Jeel Ghoghari</p>
+        <p><strong>Education:</strong> Diploma in Computer Engineering</p>
+        <p><strong>Skills:</strong> HTML, CSS, JavaScript, Responsive Design</p>
+        <p><strong>Experience:</strong> Fresher</p>
+        <p><strong>Location:</strong> Gujarat, India</p>
+        <p><strong>Contact No:</strong> +91 XXXXX XXXXX</p>
+        <p><strong>Email:</strong> jeelghoghari@gmail.com</p>
+    </div>
+
+    <h2>Contact Me</h2>
+
+    <form class="hire-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <input type="text" placeholder="Your Phone Number">
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+
+        <button type="submit">Send Request</button>
+    </form>
+
+    <a href="potfoliyo.html" class="back-btn">
+        ← Back to Portfolio
+    </a>
+
+</div>
+
+</body>
+</html>
